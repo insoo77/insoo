@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<!-- saved from url=(0057)https://kimsinwoo-hanil.github.io/schooltrip/korean2.html -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>국어 핵심 주제 2 - 제주 4·3과 사회적 의제의 비판적 읽기</title>
+  <style>
+    :root {
+      --sea: #0f6f8f;
+      --deep-sea: #06465f;
+      --sky: #dff6ff;
+      --orange: #f28c28;
+      --orange-soft: #fff0d8;
+      --stone: #39424e;
+      --paper: #fffdf8;
+      --mint: #dff7ec;
+      --red-soft: #fff0f0;
+      --text: #1f2933;
+      --muted: #5c6b73;
+      --shadow: 0 14px 35px rgba(0, 66, 89, 0.18);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Pretendard", "Noto Sans KR", "Apple SD Gothic Neo", system-ui, sans-serif;
+      color: var(--text);
+      line-height: 1.72;
+      background:
+        radial-gradient(circle at 9% 12%, rgba(242, 140, 40, 0.22) 0 48px, transparent 49px),
+        radial-gradient(circle at 91% 8%, rgba(255, 188, 66, 0.22) 0 62px, transparent 63px),
+        linear-gradient(180deg, #dff6ff 0%, #f5fbff 38%, #fff8ed 100%);
+      min-height: 100vh;
+    }
+
+    .wave {
+      position: fixed;
+      inset: auto 0 0 0;
+      height: 210px;
+      background:
+        radial-gradient(100% 80% at 50% 100%, rgba(15, 111, 143, 0.16), transparent 70%),
+        linear-gradient(180deg, transparent, rgba(15, 111, 143, 0.16));
+      z-index: -1;
+    }
+
+    .page {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 36px 20px 72px;
+    }
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      border-radius: 32px;
+      padding: 46px 42px;
+      color: white;
+      background:
+        linear-gradient(135deg, rgba(6, 70, 95, 0.96), rgba(15, 111, 143, 0.92)),
+        url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500"><path d="M0 330 C180 260 260 420 440 340 C620 260 720 410 910 330 C1050 270 1110 300 1200 250 L1200 500 L0 500 Z" fill="%23ffffff" opacity="0.13"/><path d="M0 390 C190 310 330 450 510 370 C690 290 790 440 990 360 C1100 315 1160 340 1200 310 L1200 500 L0 500 Z" fill="%23ffffff" opacity="0.16"/></svg>');
+      background-size: cover;
+      box-shadow: var(--shadow);
+    }
+
+    .hero::after {
+      content: "🍊";
+      position: absolute;
+      right: 38px;
+      bottom: 18px;
+      font-size: 96px;
+      opacity: 0.28;
+      transform: rotate(-12deg);
+    }
+
+    .hero .label {
+      display: inline-block;
+      padding: 7px 14px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.18);
+      border: 1px solid rgba(255, 255, 255, 0.32);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(30px, 5vw, 48px);
+      line-height: 1.18;
+      letter-spacing: -0.055em;
+    }
+
+    .subtitle {
+      max-width: 760px;
+      margin: 18px 0 0;
+      font-size: 18px;
+      color: rgba(255, 255, 255, 0.92);
+    }
+
+    .notice {
+      margin-top: 22px;
+      padding: 16px 18px;
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(255, 255, 255, 0.28);
+      font-size: 15px;
+    }
+
+    .toc {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 12px;
+      margin: 24px 0;
+    }
+
+    .toc div {
+      padding: 14px 16px;
+      background: rgba(255, 255, 255, 0.78);
+      border: 1px solid rgba(15, 111, 143, 0.12);
+      border-radius: 18px;
+      box-shadow: 0 7px 20px rgba(0, 66, 89, 0.08);
+      font-weight: 700;
+      color: var(--deep-sea);
+    }
+
+    section {
+      margin-top: 26px;
+      padding: 30px;
+      border-radius: 28px;
+      background: rgba(255, 253, 248, 0.94);
+      border: 1px solid rgba(15, 111, 143, 0.14);
+      box-shadow: 0 9px 24px rgba(0, 66, 89, 0.09);
+    }
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 18px;
+      font-size: 25px;
+      color: var(--deep-sea);
+      letter-spacing: -0.035em;
+    }
+
+    .section-title span {
+      display: inline-grid;
+      place-items: center;
+      width: 38px;
+      height: 38px;
+      border-radius: 14px;
+      background: var(--orange-soft);
+      color: var(--orange);
+      font-size: 20px;
+    }
+
+    .reading p {
+      margin: 0 0 18px;
+      text-align: justify;
+      word-break: keep-all;
+    }
+
+    .reading p:last-child { margin-bottom: 0; }
+
+    .key-topic {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      background:
+        linear-gradient(135deg, rgba(255, 240, 216, 0.78), rgba(223, 247, 236, 0.74));
+    }
+
+    .topic-card {
+      padding: 24px;
+      border-radius: 22px;
+      background: white;
+      border-left: 8px solid var(--orange);
+    }
+
+    .topic-card h2 {
+      margin: 0 0 8px;
+      font-size: 28px;
+      letter-spacing: -0.04em;
+      color: var(--deep-sea);
+    }
+
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-top: 14px;
+    }
+
+    .tag {
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: var(--sky);
+      color: var(--deep-sea);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .question-grid, .mission-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 14px;
+      counter-reset: card;
+    }
+
+    .q-card, .mission-card {
+      position: relative;
+      padding: 20px 18px 18px;
+      border-radius: 20px;
+      background: #ffffff;
+      border: 1px solid rgba(15, 111, 143, 0.14);
+      box-shadow: 0 6px 16px rgba(0, 66, 89, 0.07);
+      word-break: keep-all;
+    }
+
+    .q-card::before, .mission-card::before {
+      counter-increment: card;
+      content: counter(card);
+      display: inline-grid;
+      place-items: center;
+      width: 30px;
+      height: 30px;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      background: var(--deep-sea);
+      color: white;
+      font-weight: 800;
+    }
+
+    .task-box {
+      padding: 24px;
+      border-radius: 22px;
+      background: linear-gradient(135deg, #fff7eb, #ffffff);
+      border: 1px solid rgba(242, 140, 40, 0.28);
+      font-size: 18px;
+      font-weight: 700;
+      color: #3f2d1a;
+    }
+
+    .steps {
+      display: grid;
+      gap: 14px;
+      counter-reset: step;
+    }
+
+    .step {
+      display: grid;
+      grid-template-columns: 52px 1fr;
+      gap: 15px;
+      align-items: start;
+      padding: 18px;
+      border-radius: 20px;
+      background: #ffffff;
+      border: 1px solid rgba(15, 111, 143, 0.13);
+    }
+
+    .step::before {
+      counter-increment: step;
+      content: counter(step);
+      display: inline-grid;
+      place-items: center;
+      width: 46px;
+      height: 46px;
+      border-radius: 16px;
+      background: var(--sea);
+      color: #fff;
+      font-size: 20px;
+      font-weight: 900;
+    }
+
+    .step h3 {
+      margin: 0 0 6px;
+      font-size: 19px;
+      color: var(--deep-sea);
+    }
+
+    .step p { margin: 0; }
+
+    .record-list {
+      display: grid;
+      gap: 12px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .record-list li {
+      padding: 17px 18px;
+      border-radius: 18px;
+      background: #ffffff;
+      border-left: 6px solid var(--sea);
+      box-shadow: 0 5px 14px rgba(0, 66, 89, 0.06);
+      word-break: keep-all;
+    }
+
+    .mission-card {
+      background: linear-gradient(180deg, #ffffff, #fff8ee);
+    }
+
+    .mission-card strong {
+      display: block;
+      color: var(--deep-sea);
+      font-size: 17px;
+      margin-bottom: 6px;
+    }
+
+    .worksheet {
+      margin-top: 20px;
+      padding: 20px;
+      border-radius: 22px;
+      background: #f7fbfd;
+      border: 1px dashed rgba(15, 111, 143, 0.35);
+    }
+
+    .worksheet h3 {
+      margin: 0 0 12px;
+      color: var(--deep-sea);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      overflow: hidden;
+      border-radius: 16px;
+      background: white;
+    }
+
+    th, td {
+      border: 1px solid #d8e6ec;
+      padding: 12px 10px;
+      vertical-align: top;
+      text-align: left;
+      font-size: 15px;
+    }
+
+    th {
+      background: #e9f7fb;
+      color: var(--deep-sea);
+      font-weight: 800;
+    }
+
+    .tip {
+      margin-top: 16px;
+      padding: 16px 18px;
+      border-radius: 18px;
+      background: var(--mint);
+      color: #154f3a;
+      font-weight: 700;
+      word-break: keep-all;
+    }
+
+    .caution {
+      margin-top: 16px;
+      padding: 16px 18px;
+      border-radius: 18px;
+      background: var(--red-soft);
+      color: #713131;
+      font-weight: 700;
+      word-break: keep-all;
+    }
+
+    footer {
+      margin-top: 28px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    @media print {
+      body { background: white; }
+      .page { padding: 0; max-width: none; }
+      .hero, section { box-shadow: none; break-inside: avoid; }
+      .wave { display: none; }
+    }
+
+    @media (max-width: 680px) {
+      .hero { padding: 34px 24px; }
+      section { padding: 23px 18px; }
+      .step { grid-template-columns: 1fr; }
+      table { font-size: 13px; }
+      th, td { padding: 9px 8px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wave"></div>
+  <main class="page">
+    <header class="hero">
+      <div class="label">2026학년도 전북과학고등학교 1학년 web으로 떠나는 체험학습 · 국어</div>
+      <h1>국어 핵심 주제 2<br>제주 4·3과 사회적 의제의 비판적 읽기</h1>
+      <p class="subtitle">제주에서 만나는 역사 자료와 공공 표현을 관찰하며, 자료가 사건을 어떻게 설명하고 기억하게 하는지 비판적으로 읽어 봅니다.</p>
+      <div class="notice">이 활동은 특정 결론을 외우기 위한 것이 아니라, 역사적 아픔을 다루는 언어의 책임성과 자료 해석의 균형 감각을 배우기 위한 활동입니다.</div>
+    </header>
+
+    <nav class="toc" aria-label="학습 자료 구성">
+      <div>🔷 핵심 주제</div>
+      <div>🔶 읽기 자료</div>
+      <div>🔶 제주도에서 내가 해야 할 질문</div>
+      <div>🔶 탐구 활동 과제</div>
+      <div>🔶 탐구 활동 순서</div>
+      <div>🔶 특기사항 기록</div>
+      <div>🔶 제주도에서의 미션!</div>
+    </nav>
+
+    <section class="key-topic">
+      <h2 class="section-title"><span>🔷</span>핵심 주제</h2>
+      <div class="topic-card">
+        <h2>제주 4·3과 사회적 의제의 비판적 읽기</h2>
+        <p>사회적 의제를 다룬 글과 매체 자료를 읽을 때, 글쓴이의 관점, 제시된 근거, 생략된 정보, 표현 방식의 효과를 함께 살펴보는 활동입니다. 제주 4·3 관련 자료를 통해 역사적 사건을 다루는 언어와 매체의 책임을 탐구합니다.</p>
+        <div class="tag-row">
+          <span class="tag">비판적 읽기</span>
+          <span class="tag">사회적 의제</span>
+          <span class="tag">자료 해석</span>
+          <span class="tag">언어의 책임성</span>
+          <span class="tag">제주 4·3</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="reading">
+      <h2 class="section-title"><span>🔶</span>읽기 자료</h2>
+      <p>사회적 의제를 다룬 글과 매체 자료를 읽는다는 것은 단순히 내용을 이해하는 것을 넘어, 그 글이 어떤 관점에서 구성되었으며 어떤 방식으로 독자를 설득하는지를 분석하는 일이다. 특히 역사적 사건과 같이 다양한 해석이 가능한 주제일수록, 우리는 글쓴이의 관점, 제시된 근거, 생략된 정보, 표현 방식의 효과를 종합적으로 살펴보아야 한다. 같은 사건을 다루더라도 역사 해설문, 신문 기사, 다큐멘터리, 전시 설명문, 문학 작품은 각각 다른 목적과 형식으로 구성되며, 그에 따라 강조되는 내용과 전달 방식도 달라진다. 따라서 논증의 타당성을 평가할 때에는 주장과 근거가 논리적으로 연결되는지, 근거가 신뢰할 만한지, 다양한 관점을 균형 있게 반영하고 있는지를 판단하는 태도가 필요하다.</p>
+
+      <p>제주 4·3은 이러한 사회적 의제를 비판적으로 읽고 이해하는 데 중요한 사례이다. 제주 4·3은 1947년부터 1954년까지 제주 지역에서 발생한 국가 폭력과 민간인 희생 사건으로, 오랜 기간 동안 그 진상이 제대로 밝혀지지 못한 채 다양한 해석과 논쟁이 이어져 왔다. 이후 진상 규명과 명예 회복을 위한 노력이 이루어지면서, 오늘날에는 역사적 사실을 바로잡고 희생자를 추모하는 동시에, 그 의미를 어떻게 기억하고 전달할 것인가에 대한 사회적 논의가 계속되고 있다.</p>
+
+      <p>따라서 제주 4·3과 관련된 자료를 접할 때에는 단순히 정보를 받아들이는 데 그치지 않고, 그것이 어떤 방식으로 사건을 설명하고 있는지를 비판적으로 살펴볼 필요가 있다. 제주에서는 특정 전시관뿐만 아니라 공항 안내문, 박물관의 일부 전시, 거리의 안내판이나 기념 표지 등 다양한 공간에서 4·3과 관련된 표현을 간접적으로 접할 수 있다. 예를 들어 짧은 안내 문구나 표지판에서는 사건의 의미가 간략하게 제시되며, 제한된 정보 속에서 핵심 내용만 전달되는 경우가 많다. 반면 박물관의 전시에서는 제주 역사 속 여러 사건 중 하나로 4·3이 설명되면서, 사건의 맥락이나 흐름이 비교적 간단하게 제시되기도 한다. 이처럼 같은 사건이라도 어떤 자료를 중심에 두고, 얼마나 자세히 설명하며, 어떤 표현 방식을 사용하는지에 따라 독자가 받아들이는 인식은 달라질 수 있다. 따라서 “이 자료는 누구의 목소리를 중심에 두고 있는가?”, “사건의 원인과 결과는 어떻게 제시되고 있는가?”, “제한된 정보 속에서 무엇이 강조되고 무엇이 생략되었는가?”와 같은 질문을 통해 자료를 해석할 수 있다. 이러한 과정을 통해 우리는 특정한 결론을 암기하는 것이 아니라, 역사적 아픔을 다루는 데 필요한 언어의 책임성과 자료 해석의 균형 잡힌 시각을 기르게 된다.</p>
+
+      <div class="tip">읽기 핵심: 우리는 반드시 특정 장소가 아니라, 제주 곳곳에서 나타나는 다양한 방식의 ‘기억’을 읽어낼 수 있어야 합니다.</div>
+    </section>
+
+    <section>
+      <h2 class="section-title"><span>🔶</span>제주도에서 내가 해야 할 질문</h2>
+      <div class="question-grid">
+        <div class="q-card">이 자료는 어떤 사건이나 내용을 다루고 있는가?</div>
+        <div class="q-card">이 자료는 누구의 목소리나 입장을 중심에 두고 있는가?</div>
+        <div class="q-card">사건의 원인과 결과는 어떤 순서와 방식으로 제시되어 있는가?</div>
+        <div class="q-card">자료에서 강조되는 내용은 무엇이며, 상대적으로 생략된 정보는 무엇인가?</div>
+        <div class="q-card">사용된 단어, 문장, 사진, 영상은 어떤 분위기나 태도를 만들어 내는가?</div>
+        <div class="q-card">이 자료의 주된 목적은 정보 전달, 추모, 교육, 관광 안내 중 무엇에 가까운가?</div>
+      </div>
+      <div class="caution">주의: 역사적 아픔을 다룬 자료를 관찰할 때에는 장난스럽게 소비하지 않고, 자료 속 인물과 공동체에 대한 존중을 유지해야 합니다.</div>
+    </section>
+
+    <section>
+      <h2 class="section-title"><span>🔶</span>탐구 활동 과제</h2>
+      <div class="task-box">
+        제주에서 접한 4·3 관련 자료 2가지 이상을 선정하여, 각 자료의 관점, 표현 방식, 정보 제시 방식을 비교·분석하고 그 의미를 비판적으로 해석하기
+      </div>
+      <div class="worksheet">
+        <h3>활동 결과물 작성 틀</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>구분</th>
+              <th>자료 1</th>
+              <th>자료 2</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>발견 장소</td>
+              <td>예: 공항, 거리 안내판, 박물관 일부 전시 등</td>
+              <td>예: 기념 표지, 안내문, 전시 설명문 등</td>
+            </tr>
+            <tr>
+              <td>핵심 표현</td>
+              <td>인상 깊은 문장이나 단어 기록</td>
+              <td>인상 깊은 문장이나 단어 기록</td>
+            </tr>
+            <tr>
+              <td>자료의 목적</td>
+              <td>정보 전달 / 추모 / 교육 / 안내 등</td>
+              <td>정보 전달 / 추모 / 교육 / 안내 등</td>
+            </tr>
+            <tr>
+              <td>강조된 내용</td>
+              <td>무엇을 가장 중요하게 보여 주는가?</td>
+              <td>무엇을 가장 중요하게 보여 주는가?</td>
+            </tr>
+            <tr>
+              <td>생략된 정보</td>
+              <td>더 알고 싶은 점은 무엇인가?</td>
+              <td>더 알고 싶은 점은 무엇인가?</td>
+            </tr>
+            <tr>
+              <td>나의 해석</td>
+              <td>이 자료를 통해 무엇을 생각하게 되었는가?</td>
+              <td>이 자료를 통해 무엇을 생각하게 되었는가?</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title"><span>🔶</span>탐구 활동 순서</h2>
+      <div class="steps">
+        <div class="step">
+          <div>
+            <h3>자료 발견하기</h3>
+            <p>제주에서 4·3과 관련된 안내문, 표지판, 박물관 전시 설명, 기념 문구 등을 찾아 2가지 이상 기록합니다.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div>
+            <h3>핵심 표현 기록하기</h3>
+            <p>자료 속에서 인상 깊은 단어, 문장, 사진, 배열 방식 등을 기록합니다. 가능하다면 장소와 상황도 함께 적습니다.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div>
+            <h3>관점과 목적 분석하기</h3>
+            <p>자료가 누구의 목소리를 중심에 두는지, 정보 전달·추모·교육·관광 안내 중 어떤 목적에 가까운지 생각합니다.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div>
+            <h3>강조와 생략 파악하기</h3>
+            <p>자료가 무엇을 강조하는지, 제한된 정보 속에서 무엇이 빠져 있는지, 더 알고 싶은 내용은 무엇인지 정리합니다.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div>
+            <h3>두 자료 비교하기</h3>
+            <p>서로 다른 자료가 같은 사건을 어떻게 다르게 설명하는지 비교합니다. 분량, 표현, 분위기, 목적의 차이를 중심으로 살펴봅니다.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div>
+            <h3>나의 해석과 성찰 쓰기</h3>
+            <p>자료를 읽으며 새롭게 알게 된 점, 역사적 사건을 다루는 언어가 왜 신중해야 하는지에 대한 생각을 정리합니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="section-title"><span>🔶</span>탐구 활동 수행 시 특기사항 기록</h2>
+      <ul class="record-list">
+        <li>제주 지역에서 접한 4·3 관련 자료를 분석하며, 자료의 관점과 표현 방식에 따른 의미 차이를 탐구함.</li>
+        <li>제한된 정보 속에서 강조와 생략을 구분하고, 자료의 목적과 전달 방식 간의 관계를 비판적으로 이해함.</li>
+        <li>역사적 사건을 다루는 언어의 책임성을 인식하고, 균형 잡힌 시각으로 자료를 해석하려는 태도를 보임.</li>
+        <li>공공 안내문, 전시 설명, 기념 표지 등 서로 다른 매체의 서술 방식을 비교하며 사회적 의제를 읽는 능력을 확장함.</li>
+        <li>제주 4·3을 둘러싼 기억과 추모의 표현 방식을 살펴보고, 사회적 의제를 다룬 자료를 존중과 신중함의 태도로 해석함.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2 class="section-title"><span>🔶</span>제주도에서의 미션!</h2>
+      <div class="mission-grid">
+        <div class="mission-card"><strong>미션 1. 4·3 관련 표현 찾기</strong>안내문, 표지판, 전시 설명, 기념 문구 등에서 4·3과 관련된 표현을 2개 이상 찾아 기록합니다.</div>
+        <div class="mission-card"><strong>미션 2. 서로 다른 자료 비교하기</strong>짧은 표지판과 긴 설명문처럼, 설명 방식이 다른 자료 2가지를 골라 차이를 비교합니다.</div>
+        <div class="mission-card"><strong>미션 3. 가장 인상 깊은 표현 고르기</strong>가장 기억에 남은 단어 또는 문장을 하나 고르고, 왜 인상 깊었는지 씁니다.</div>
+        <div class="mission-card"><strong>미션 4. 생략된 정보 질문하기</strong>자료를 읽고 “더 알고 싶은 점” 또는 “빠져 있다고 느낀 정보”를 한 가지 이상 질문으로 만듭니다.</div>
+        <div class="mission-card"><strong>미션 5. 언어의 책임성 생각하기</strong>역사적 아픔을 다룰 때 어떤 표현을 조심해야 하는지 자신의 생각을 3문장 이상 정리합니다.</div>
+      </div>
+      <div class="tip">미션 완료 기준: 자료 2가지 이상 기록 + 비교 분석 1회 + 나의 성찰 3문장 이상 작성</div>
+    </section>
+
+    <footer>
+      교과 기반 web으로 떠나는 체험학습 자료집 · 국어 핵심 주제 2 | 제주 4·3과 사회적 의제의 비판적 읽기
+    </footer>
+  </main>
+
+
+</body></html>

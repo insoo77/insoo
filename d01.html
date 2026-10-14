@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)https://kimsinwoo-hanil.github.io/schooltrip/society1.html -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>통합사회 핵심 주제 1 - 살기 좋은 제주, 행복과 정주 환경</title>
+  <style>
+    :root{
+      --palm-bg:#dfeee2;
+      --palm-deep:#1f5f45;
+      --palm-mid:#3f8a64;
+      --palm-soft:#edf7ef;
+      --paper:#fffdf7;
+      --ink:#26352d;
+      --muted:#5f6f65;
+      --accent:#f1b84b;
+      --line:#bad6c1;
+      --blue:#3b7c8c;
+      --red:#b75d4a;
+    }
+    *{box-sizing:border-box;}
+    body{
+      margin:0;
+      font-family:"Noto Sans KR","Malgun Gothic",Arial,sans-serif;
+      background:var(--palm-bg);
+      color:var(--ink);
+      line-height:1.75;
+      word-break:keep-all;
+    }
+    .page{
+      max-width:1120px;
+      margin:36px auto;
+      padding:28px;
+    }
+    .hero{
+      background:linear-gradient(135deg, #fffdf7 0%, #f4fbf5 100%);
+      border:2px solid var(--line);
+      border-radius:28px;
+      padding:42px 46px;
+      box-shadow:0 18px 45px rgba(31,95,69,.13);
+      position:relative;
+      overflow:hidden;
+    }
+    .hero:before{
+      content:"";
+      position:absolute;
+      width:320px;
+      height:320px;
+      border-radius:50%;
+      background:rgba(63,138,100,.12);
+      right:-90px;
+      top:-110px;
+    }
+    .hero:after{
+      content:"🌴";
+      position:absolute;
+      right:44px;
+      bottom:28px;
+      font-size:74px;
+      opacity:.18;
+    }
+    .label{
+      display:inline-block;
+      padding:7px 14px;
+      border-radius:999px;
+      background:var(--palm-deep);
+      color:white;
+      font-weight:800;
+      font-size:15px;
+      letter-spacing:-.02em;
+    }
+    h1{
+      margin:18px 0 8px;
+      font-size:42px;
+      line-height:1.22;
+      color:var(--palm-deep);
+      letter-spacing:-.04em;
+    }
+    .subtitle{
+      font-size:20px;
+      color:var(--muted);
+      margin:0;
+      font-weight:600;
+    }
+    .meta{
+      margin-top:26px;
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:12px;
+    }
+    .meta div{
+      background:var(--palm-soft);
+      border:1px solid var(--line);
+      border-radius:16px;
+      padding:13px 15px;
+      font-size:15px;
+    }
+    .meta b{color:var(--palm-deep);}
+    section{
+      background:var(--paper);
+      border:1.5px solid var(--line);
+      border-radius:24px;
+      padding:30px 34px;
+      margin-top:24px;
+      box-shadow:0 10px 28px rgba(31,95,69,.08);
+    }
+    h2{
+      margin:0 0 18px;
+      color:var(--palm-deep);
+      font-size:28px;
+      letter-spacing:-.035em;
+      display:flex;
+      align-items:center;
+      gap:10px;
+    }
+    h3{
+      margin:24px 0 10px;
+      color:#2e6f52;
+      font-size:21px;
+      letter-spacing:-.03em;
+    }
+    p{margin:12px 0;}
+    .lead{
+      background:#f6fbf7;
+      border-left:8px solid var(--palm-mid);
+      border-radius:14px;
+      padding:18px 20px;
+      font-size:17px;
+      font-weight:600;
+    }
+    .standard{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:12px;
+      margin-top:12px;
+    }
+    .standard .box{
+      background:#f7fbf8;
+      border:1px dashed var(--line);
+      border-radius:16px;
+      padding:16px 18px;
+    }
+    .tag{
+      display:inline-block;
+      margin:4px 5px 4px 0;
+      padding:5px 10px;
+      border-radius:999px;
+      background:#e7f3ea;
+      color:var(--palm-deep);
+      font-weight:700;
+      font-size:14px;
+    }
+    .reading p{
+      text-indent:1em;
+      margin:14px 0;
+    }
+    .question-grid{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:16px;
+    }
+    .qcard{
+      background:#f7fbf8;
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:18px 20px;
+    }
+    .qcard h3{margin-top:0;}
+    ul,ol{padding-left:22px;}
+    li{margin:7px 0;}
+    .task-box{
+      background:#fff9ea;
+      border:1.5px solid #ecd18b;
+      border-radius:18px;
+      padding:20px;
+      margin:14px 0;
+    }
+    .step{
+      display:grid;
+      grid-template-columns:72px 1fr;
+      gap:18px;
+      align-items:start;
+      padding:18px 0;
+      border-bottom:1px solid #e5eee7;
+    }
+    .step:last-child{border-bottom:none;}
+    .num{
+      width:58px;
+      height:58px;
+      border-radius:18px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      background:var(--palm-deep);
+      color:white;
+      font-weight:900;
+      font-size:22px;
+    }
+    .mission-grid{
+      display:grid;
+      grid-template-columns:repeat(2,1fr);
+      gap:16px;
+    }
+    .mission{
+      background:#f9fcfa;
+      border:1.5px solid var(--line);
+      border-radius:20px;
+      padding:20px;
+      position:relative;
+    }
+    .mission strong{
+      color:var(--palm-deep);
+      font-size:18px;
+    }
+    .mission .badge{
+      display:inline-block;
+      margin-bottom:8px;
+      padding:4px 10px;
+      border-radius:999px;
+      background:#d9eddf;
+      color:var(--palm-deep);
+      font-weight:800;
+      font-size:13px;
+    }
+    .record{
+      background:#f6fbf7;
+      border-radius:16px;
+      padding:16px 18px;
+      border:1px solid var(--line);
+      margin:12px 0;
+    }
+    .blank{
+      border-bottom:1px solid #9fb9a8;
+      height:30px;
+      margin:8px 0 16px;
+    }
+    .source-list{
+      columns:2;
+      column-gap:28px;
+    }
+    .source-list li{break-inside:avoid;}
+    .note{
+      color:var(--muted);
+      font-size:14px;
+    }
+    .footer{
+      text-align:center;
+      color:#476653;
+      margin:28px 0 6px;
+      font-weight:700;
+    }
+    table{
+      width:100%;
+      border-collapse:collapse;
+      margin:14px 0;
+      overflow:hidden;
+      border-radius:14px;
+      font-size:15px;
+    }
+    th,td{
+      border:1px solid #cfe1d4;
+      padding:12px 14px;
+      vertical-align:top;
+    }
+    th{
+      background:#e6f2e9;
+      color:var(--palm-deep);
+      text-align:left;
+    }
+    @media print{
+      body{background:white;}
+      .page{margin:0; padding:0; max-width:none;}
+      section,.hero{box-shadow:none; break-inside:avoid;}
+      .mission,.qcard,.record,.task-box{break-inside:avoid;}
+    }
+    @media (max-width:800px){
+      .page{padding:14px; margin:12px auto;}
+      .hero,section{padding:24px 20px;}
+      h1{font-size:31px;}
+      .meta,.standard,.question-grid,.mission-grid{grid-template-columns:1fr;}
+      .source-list{columns:1;}
+      .step{grid-template-columns:1fr;}
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <header class="hero">
+      <span class="label">통합사회 × 2026학년도 전북과학고등학교 1학년 web으로 떠나는 체험학습</span>
+      <h1>살기 좋은 제주,<br>행복과 정주 환경</h1>
+      <p class="subtitle">제주를 관광지가 아니라 “사람들이 살아가는 삶의 공간”으로 바라보기</p>
+      <div class="meta">
+        <div><b>핵심 개념</b><br>행복, 삶의 질, 정주 환경, 지속가능성</div>
+        <div><b>탐구 방법</b><br>현장 관찰, 비교 분석, 자료 조사, 성찰</div>
+        <div><b>현장 미션</b><br>사진 기록, 문구 찾기, 물가 탐정, 제주 상상 인터뷰</div>
+      </div>
+    </header>
+
+    <section>
+      <h2>🔷 핵심 주제</h2>
+      <div class="lead">
+        제주특별자치도는 아름다운 자연환경 때문에 많은 사람에게 ‘힐링 도시’, ‘한 달 살기 도시’로 소비된다. 그러나 관광객이 느끼는 제주와 주민이 살아가는 제주는 다를 수 있다. 이 활동에서는 행복한 삶과 정주 환경의 의미를 이해하고, 제주 자연환경·관광 산업·주거 문제·물가 상승·관광지화 현상을 통합사회 관점에서 탐구한다.
+      </div>
+
+      <h3>연계 성취기준</h3>
+      <div class="standard">
+        <div class="box">
+          <b>[10통사1-02-01]</b><br>
+          시대와 지역에 따라 다르게 나타나는 행복의 기준을 사례를 통해 비교하여 평가하고, 삶의 목적으로서 행복의 의미를 성찰한다.
+        </div>
+        <div class="box">
+          <b>[10통사1-02-02]</b><br>
+          행복한 삶을 실현하기 위한 조건으로 질 높은 정주 환경의 조성, 경제적 안정, 민주주의 발전 및 도덕적 실천의 필요성에 관해 탐구한다.
+        </div>
+      </div>
+
+      <h3>탐구 방향</h3>
+      <span class="tag">힐링 도시 제주</span>
+      <span class="tag">한 달 살기</span>
+      <span class="tag">주민과 관광객의 시선</span>
+      <span class="tag">주거 문제</span>
+      <span class="tag">물가 상승</span>
+      <span class="tag">삶의 질</span>
+    </section>
+
+    <section class="reading">
+      <h2>🔶 읽기 자료</h2>
+
+      <p>우리는 흔히 “행복한 삶”을 꿈꾼다. 그러나 행복은 사람마다 다르게 느껴진다. 어떤 사람은 경제적으로 안정된 삶을 행복이라고 생각하고, 어떤 사람은 가족과 함께 보내는 시간을 더 중요하게 여긴다. 또 어떤 사람은 아름다운 자연 속에서 여유롭게 살아가는 삶을 행복이라고 느낀다. 이처럼 행복은 단순히 돈이나 물질만으로 결정되지 않으며, 개인이 살아가는 환경과 사회의 모습에도 큰 영향을 받는다.</p>
+
+      <p>사람들이 행복한 삶을 살아가기 위해 필요한 조건 중 하나로 ‘정주 환경’을 중요하게 다룬다. 정주 환경이란 사람들이 일정한 지역에 머물며 살아가는 데 필요한 자연환경, 주거 환경, 교통, 문화 시설, 안전, 공동체 관계 등을 포함하는 개념이다. 다시 말해, 단순히 집이 있는 공간이 아니라 “사람답게 살아갈 수 있는 생활 환경 전체”를 의미한다. 아무리 경제적으로 풍요롭더라도 공기가 오염되어 있거나, 범죄가 많거나, 공동체가 붕괴된 사회에서는 삶의 질이 낮아질 수 있다.</p>
+
+      <p>최근 많은 사람들이 제주특별자치도를 ‘살기 좋은 곳’으로 생각한다. 실제로 제주에는 푸른 바다, 오름, 한라산, 곶자왈 숲과 같은 아름다운 자연환경이 펼쳐져 있다. 도시 곳곳에서는 바다를 쉽게 볼 수 있고, 비교적 깨끗한 공기와 느린 생활 리듬을 경험할 수 있다. 이러한 이유로 제주를 ‘힐링 도시’, ‘쉼의 공간’이라고 부르는 사람들도 많다. 특히 복잡한 대도시를 떠나 제주에서 ‘한 달 살기’를 하거나 아예 이주를 고민하는 사람들도 있다.</p>
+
+      <p>제주의 자연환경은 제주 사람들의 삶의 방식에도 큰 영향을 주었다. 제주에는 바람이 강하게 불기 때문에 돌담을 낮고 넓게 쌓는 문화가 발달하였고, 바다와 가까운 환경 속에서 해녀 문화와 어업 문화가 형성되었다. 또한 화산 활동으로 만들어진 현무암 지형은 제주만의 독특한 경관을 만들었으며, 오늘날에는 중요한 관광 자원이 되고 있다. 이처럼 자연환경은 단순한 배경이 아니라 인간의 생활 방식과 문화, 경제 활동까지 변화시키는 중요한 요소이다.</p>
+
+      <p>그러나 제주가 언제나 “행복한 공간”인 것만은 아니다. 관광객 증가와 도시 개발은 여러 사회 문제도 만들어 내고 있다. 대표적인 예가 높은 물가와 주거 문제이다. 관광 산업이 성장하면서 숙박 시설과 상업 시설이 늘어났고, 일부 지역에서는 집값과 임대료가 상승하기도 하였다. 이는 제주에 실제로 거주하는 주민들의 생활 부담으로 이어질 수 있다. 또한 관광객 증가로 인해 교통 혼잡, 쓰레기 문제, 환경 오염 문제도 함께 나타난다. 관광객에게는 아름다운 여행지일 수 있지만, 주민들에게는 생활 불편이 커질 수도 있는 것이다.</p>
+
+      <p>이러한 모습은 우리에게 중요한 질문을 던진다. “관광객이 느끼는 제주와 주민이 살아가는 제주는 같은 공간일까?” 겉으로 보기에는 같은 제주처럼 보이지만, 누군가에게는 휴식과 행복의 공간이 되고, 다른 누군가에게는 생계와 경쟁, 생활비 부담의 공간이 될 수도 있다. 따라서 우리는 한 지역을 바라볼 때 단순히 풍경만 보는 것이 아니라, 그 안에서 살아가는 사람들의 삶까지 함께 이해하려는 태도가 필요하다.</p>
+
+      <p>또한 행복한 삶을 위해서는 자연환경만 중요한 것이 아니라 공동체와 사회 제도 역시 중요하다. 깨끗한 환경 속에서 살아가더라도 의료 시설이나 교육 시설이 부족하거나, 지역 간 격차가 심하다면 삶의 질은 낮아질 수 있다. 반대로 경제적으로 풍요롭더라도 인간관계가 단절되고 공동체 의식이 약해진 사회에서는 외로움과 불안이 커질 수 있다. 결국 행복한 정주 환경이란 자연, 경제, 사회, 문화가 조화를 이루는 공간이라고 볼 수 있다.</p>
+
+      <p>제주는 지금도 “지속가능한 도시”를 만들기 위한 다양한 고민을 하고 있다. 환경을 지키면서도 관광 산업을 유지하려는 노력, 탄소중립 정책, 재생에너지 확대, 지역 공동체 회복 운동 등이 대표적이다. 앞으로 제주가 진정으로 살기 좋은 지역이 되기 위해서는 단순히 관광객이 많이 찾는 도시가 아니라, 주민과 자연이 함께 행복할 수 있는 공간으로 발전해 나가야 할 것이다. 그리고 이러한 고민은 제주만의 문제가 아니라, 우리가 살아가는 모든 지역 사회에도 적용되는 중요한 과제라고 할 수 있다.</p>
+    </section>
+
+    <section>
+      <h2>🔶 제주도에서 내가 해야 할 질문</h2>
+      <p class="lead">아래 질문은 읽기 자료를 실제 현장 탐구로 연결하는 디딤돌이다. web으로 떠나는 체험학습 중 풍경을 감상하는 데서 멈추지 말고, 제주를 “삶의 공간”으로 관찰해 보자.</p>
+
+      <div class="question-grid">
+        <div class="qcard">
+          <h3>🌿 제주 자연환경과 행복</h3>
+          <ul>
+            <li>제주에서 사람들이 “힐링된다”고 느끼는 이유는 무엇일까?</li>
+            <li>내가 제주에서 가장 편안함을 느낀 공간은 어디이며, 왜 그렇게 느꼈을까?</li>
+            <li>바다, 오름, 숲, 바람은 사람의 삶의 질에 어떤 영향을 줄까?</li>
+            <li>자연환경이 좋은 지역이라면 모두 행복한 삶의 공간이라고 할 수 있을까?</li>
+          </ul>
+        </div>
+        <div class="qcard">
+          <h3>🏘️ 정주 환경과 삶의 질</h3>
+          <ul>
+            <li>제주 주민들은 어떤 환경에서 살아가고 있을까?</li>
+            <li>관광객의 시선에서 본 제주와 주민의 삶 속 제주는 어떻게 다를까?</li>
+            <li>제주에서 생활한다면 가장 편리한 점과 가장 불편한 점은 무엇일까?</li>
+            <li>행복한 삶을 위해 자연환경 외에 필요한 조건은 무엇일까?</li>
+          </ul>
+        </div>
+        <div class="qcard">
+          <h3>💰 관광 산업과 지역 변화</h3>
+          <ul>
+            <li>제주에는 왜 관광객 대상 시설이 많을까?</li>
+            <li>관광 산업은 제주 지역 경제에 어떤 도움을 줄까?</li>
+            <li>관광객 증가로 인해 제주 주민들이 겪는 어려움은 무엇일까?</li>
+            <li>숙박 시설, 카페, 관광지 증가는 주민의 삶에 어떤 영향을 미칠까?</li>
+          </ul>
+        </div>
+        <div class="qcard">
+          <h3>⚖️ 지속가능한 제주</h3>
+          <ul>
+            <li>제주가 앞으로도 “살기 좋은 도시”가 되기 위해 필요한 것은 무엇일까?</li>
+            <li>자연 보존과 관광 개발은 함께 가능할까?</li>
+            <li>관광객인 나는 제주 환경을 위해 어떤 태도를 가져야 할까?</li>
+            <li>주민과 관광객 모두 행복한 제주를 만들기 위해 어떤 노력이 필요할까?</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>🔶 탐구 활동 과제</h2>
+      <div class="task-box">
+        <h3>「살기 좋은 제주」 탐구 프로젝트</h3>
+        <p>제주특별자치도의 자연환경, 관광 산업, 생활공간을 직접 관찰하고, 제주 주민과 관광객이 느끼는 행복의 기준이 어떻게 다른지 탐구해 보자. 또한 관광 산업의 성장 속에서 나타나는 주거 문제, 물가 상승, 관광지화 현상 등을 조사하고, 지속가능한 제주를 만들기 위한 방안을 제안해 보자.</p>
+      </div>
+
+      <h3>활동에 반드시 포함할 내용</h3>
+      <ul>
+        <li>제주에서 발견한 ‘행복한 삶의 요소’ 정리하기</li>
+        <li>관광객의 시선과 주민의 시선 비교하기</li>
+        <li>제주 자연환경이 삶의 질에 미치는 영향 분석하기</li>
+        <li>관광 산업으로 인한 긍정적 변화와 문제점 조사하기</li>
+        <li>주거 문제, 물가 상승, 교통 혼잡, 환경 오염 등의 사례 탐색하기</li>
+        <li>지속가능한 제주를 위한 해결 방안 제안하기</li>
+        <li>나에게 ‘살기 좋은 지역’이란 무엇인지 성찰하기</li>
+      </ul>
+
+      <h3>결과물 예시</h3>
+      <table>
+        <tbody><tr>
+          <th>결과물 형태</th>
+          <th>내용 구성 예시</th>
+        </tr>
+        <tr>
+          <td>현장 탐구 보고서</td>
+          <td>관찰 내용, 사진, 자료 조사, 문제 분석, 해결 방안, 개인 성찰</td>
+        </tr>
+        <tr>
+          <td>카드 뉴스</td>
+          <td>“관광객의 제주 vs 주민의 제주”, “살기 좋은 제주 조건 5가지” 등</td>
+        </tr>
+        <tr>
+          <td>사진 탐구 일지</td>
+          <td>현장 사진 3~5장과 각 사진에 담긴 사회적 의미 해석</td>
+        </tr>
+        <tr>
+          <td>모둠 발표 자료</td>
+          <td>제주 정주 환경의 장점·문제점·개선 방안 발표</td>
+        </tr>
+      </tbody></table>
+    </section>
+
+    <section>
+      <h2>🔶 탐구 활동 순서</h2>
+
+      <div class="step">
+        <div class="num">1</div>
+        <div>
+          <h3>읽기 자료 이해 및 탐구 질문 정리</h3>
+          <p>행복, 삶의 질, 정주 환경의 의미를 이해하고 제주 자연환경과 관광 산업의 특징을 정리한다. 현장에서 확인하고 싶은 질문을 3~5개 선정한다.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="num">2</div>
+        <div>
+          <h3>제주 현장 관찰 및 기록</h3>
+          <p>관광객이 몰리는 공간, 주민 생활 공간, 숙박 시설과 상업 시설, 교통 혼잡, 자연 보호 안내문, 쓰레기 문제 등을 관찰한다. 사진, 메모, 현장 스케치, 인상 깊은 문구 기록 등의 방법을 활용한다.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="num">3</div>
+        <div>
+          <h3>자료 조사 및 비교 분석</h3>
+          <p>제주 인구 변화, 관광객 증가, 집값·물가 관련 기사, 탄소중립 정책, 삶의 질 자료 등을 조사한다. 관광 산업의 긍정적 영향과 부정적 영향, 관광객과 주민의 관점 차이를 비교한다.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="num">4</div>
+        <div>
+          <h3>지속가능한 제주 만들기 제안</h3>
+          <p>제주가 앞으로 해결해야 할 문제를 정리하고, 주민과 관광객이 함께 행복할 수 있는 방안을 제안한다. 예를 들어 친환경 관광 수칙, 주민 배려 여행 문화, 쓰레기 감소 방안 등을 구상할 수 있다.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="num">5</div>
+        <div>
+          <h3>나의 삶과 연결하여 성찰하기</h3>
+          <p>나에게 행복한 삶이란 무엇인지, 내가 살고 싶은 지역은 어떤 모습인지, 좋은 정주 환경이란 무엇인지 자신의 언어로 정리한다.</p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>🔶 탐구 활동 수행 시 특기사항 기록</h2>
+      <p class="lead">아래 문장은 활동 후 과목별 세부능력 및 특기사항, 활동 기록, 모둠 피드백 등에 활용할 수 있는 예시이다.</p>
+
+      <div class="record">
+        제주의 자연환경과 관광 산업이 지역 주민의 삶에 미치는 영향을 통합적으로 탐구함. 관광객의 시선과 주민의 삶의 차이를 비교하며 행복과 삶의 질의 의미를 비판적으로 이해하였고, 관광지화에 따른 주거 문제와 환경 문제를 조사하여 지속가능한 지역 발전 방안을 제안함.
+      </div>
+
+      <div class="record">
+        제주 지역의 자연환경과 정주 환경의 관계를 탐구하며 삶의 질을 구성하는 요소를 구체적으로 분석함. 관광 산업 성장에 따른 경제적 효과와 생활 불편을 균형 있게 이해하였으며, 현장 기록 활동을 통해 지역 사회를 다각도로 바라보는 통합적 사고력을 보여 줌.
+      </div>
+
+      <div class="record">
+        행복한 삶의 조건과 지속가능한 지역 사회의 의미를 제주 사례를 통해 탐구함. 관광객 중심의 시각에서 벗어나 주민의 생활 환경과 지역 문제를 함께 고려하였으며, 생태시민으로서 실천 가능한 방안을 제안하는 등 공동체 의식을 바탕으로 탐구 활동에 적극 참여함.
+      </div>
+
+      <div class="record">
+        제주의 관광 산업과 도시 변화 양상을 조사하며 지역 개발과 환경 보존의 균형 문제를 탐구함. 다양한 자료를 비교·분석하여 사회 현상을 비판적으로 해석하였고, 행복과 정주 환경의 관계를 자신의 삶과 연결하여 성찰함.
+      </div>
+    </section>
+
+    <section>
+      <h2>🔶 제주도에서의 미션!</h2>
+      <p class="lead">web으로 떠나는 체험학습 중 가볍게 참여할 수 있는 챌린지이다. 단, 단순 인증샷이 아니라 “행복과 정주 환경”을 탐구하는 기록이어야 한다.</p>
+
+      <div class="mission-grid">
+        <div class="mission">
+          <span class="badge">미션 1</span><br>
+          <strong>📸 “제주에서 가장 행복해 보이는 공간” 찾기</strong>
+          <p>사람들이 편안함과 행복을 느낄 것 같은 장소를 찾아 사진을 찍고, 왜 그렇게 느꼈는지 기록한다.</p>
+          <ul>
+            <li>이 장소는 관광객의 공간인가, 주민의 공간인가?</li>
+            <li>나는 이곳에서 살고 싶은가?</li>
+          </ul>
+        </div>
+
+        <div class="mission">
+          <span class="badge">미션 2</span><br>
+          <strong>🏘️ 관광객의 제주 vs 주민의 제주 발견하기</strong>
+          <p>관광객이 많이 찾는 공간과 주민 생활 공간의 차이를 찾아 기록한다.</p>
+          <p><b>문장 완성:</b> 관광객의 제주가 __________라면, 주민의 제주는 __________이다.</p>
+        </div>
+
+        <div class="mission">
+          <span class="badge">미션 3</span><br>
+          <strong>💰 제주 물가 탐정 활동</strong>
+          <p>관광지에서 판매되는 음식, 음료, 기념품 가격을 조사하고 왜 관광지 물가가 높아질 수 있는지 생각한다.</p>
+          <ul>
+            <li>관광객과 주민은 같은 가격을 어떻게 다르게 느낄까?</li>
+          </ul>
+        </div>
+
+        <div class="mission">
+          <span class="badge">미션 4</span><br>
+          <strong>🌊 “힐링 제주” 문구 찾기</strong>
+          <p>제주 곳곳에서 사용되는 “쉼”, “힐링”, “한 달 살기”, “감성 여행” 등의 표현을 찾아 사진 또는 메모로 기록한다.</p>
+          <ul>
+            <li>제주는 어떤 이미지로 소비되고 있을까?</li>
+          </ul>
+        </div>
+
+        <div class="mission">
+          <span class="badge">미션 5</span><br>
+          <strong>🚮 제주 환경 지킴이 챌린지</strong>
+          <p>관광으로 인해 나타날 수 있는 쓰레기, 교통 혼잡, 자연 훼손, 환경 보호 안내문을 찾아 기록한다.</p>
+          <ul>
+            <li>관광객인 나는 어떤 태도를 가져야 할까?</li>
+          </ul>
+        </div>
+
+        <div class="mission">
+          <span class="badge">미션 6</span><br>
+          <strong>🗣️ 제주 사람들의 삶 상상 인터뷰</strong>
+          <p>실제 인터뷰가 어렵다면 주민의 입장에서 “제주에서 살아간다는 것”의 장점과 어려움을 상상하여 기록한다.</p>
+          <ul>
+            <li>관광객이 많아져서 좋은 점과 힘든 점은 무엇일까?</li>
+          </ul>
+        </div>
+
+        <div class="mission">
+          <span class="badge">미션 7</span><br>
+          <strong>🌱 내가 만드는 “살기 좋은 제주”</strong>
+          <p>주민과 관광객 모두 행복한 제주를 만들기 위한 아이디어를 1가지 제안한다.</p>
+          <ul>
+            <li>친환경 관광 수칙</li>
+            <li>주민 배려 여행 문화</li>
+            <li>쓰레기 줄이기 캠페인</li>
+          </ul>
+        </div>
+
+        <div class="mission">
+          <span class="badge">보너스</span><br>
+          <strong>🌈 “나에게 행복한 삶이란?”</strong>
+          <p>제주 여행 중 가장 기억에 남았던 순간을 떠올리며 문장을 완성한다.</p>
+          <p><b>나는 제주에서 __________할 때 가장 행복했다.</b></p>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <h2>📝 나의 현장 기록</h2>
+      <h3>1. 제주에서 가장 행복해 보였던 공간</h3>
+      <div class="blank"></div>
+      <h3>2. 관광객의 제주와 주민의 제주가 다르다고 느낀 장면</h3>
+      <div class="blank"></div>
+      <h3>3. 제주에서 발견한 정주 환경의 장점</h3>
+      <div class="blank"></div>
+      <h3>4. 제주에서 발견한 정주 환경의 문제점</h3>
+      <div class="blank"></div>
+      <h3>5. 내가 제안하는 “살기 좋은 제주” 아이디어</h3>
+      <div class="blank"></div>
+    </section>
+
+    <section>
+      <h2>📚 더 찾아볼 자료</h2>
+      <ul class="source-list">
+        <li>제주특별자치도청: 제주 정책, 환경, 관광, 도시 관련 자료</li>
+        <li>제주연구원: 제주 지역 사회, 경제, 관광, 정주 환경 관련 연구 보고서</li>
+        <li>통계청 국가통계포털 KOSIS: 인구, 주거, 물가, 지역 지표 통계</li>
+        <li>국토연구원: 도시, 지역 개발, 정주 환경 관련 연구 자료</li>
+        <li>한국관광공사 데이터랩: 관광객 이동, 관광 소비, 지역 관광 자료</li>
+        <li>유현준, 『도시는 무엇으로 사는가』: 도시와 삶의 관계를 이해하는 데 도움</li>
+        <li>에릭 와이너, 『행복의 지도』: 지역과 문화에 따라 달라지는 행복 이해</li>
+      </ul>
+      <p class="note">※ 자료를 조사할 때에는 작성 기관, 작성 시기, 자료의 목적을 함께 확인해야 한다.</p>
+    </section>
+
+    <p class="footer">통합사회 제주 현장체험학습 자료집 · 살기 좋은 제주, 행복과 정주 환경 🌴</p>
+  </main>
+
+
+</body></html>
